@@ -95,6 +95,11 @@ Library\Bee\artifacts\mvdfrm\UnityEditor.OSXStandalone.Extensions.dll_BA2812DF78
 Library\Bee\artifacts\mvdfrm\UnityEditor.UWP.Extensions.dll_0925EAB62C1551CB.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.WebGL.Extensions.dll_58DAF279DE82AF30.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.WindowsStandalone.Extensions.dll_7DCAA47A7EB5A220.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.dll_C19C7FDFD9352939.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.Mdb.dll_B3616568502E72B6.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.Pdb.dll_CAB3DDD7CEE37439.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.Rocks.dll_4E821F763DCCA579.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Unsafe.dll_2792B9990CA1B88A.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Plastic.Antlr3.Runtime.dll_9B9F75F68F16895E.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Plastic.Newtonsoft.Json.dll_7DAC067EAE2416F7.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.IonicZip.dll_3D0490BCAF31F61C.mvfrm

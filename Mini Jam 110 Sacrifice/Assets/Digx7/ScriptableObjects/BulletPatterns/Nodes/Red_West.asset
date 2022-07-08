@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914954bca8fa4c242bc7f4f6b1f045ed, type: 3}
+  m_Name: Red_West
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 7929923726149695225, guid: 73f3ea64dab27474f97a2b70ada53777, type: 3}
+  SpawnLocation: {x: 1, y: 0}
+  Rotation: {x: 0, y: 0, z: 0, w: 1}
