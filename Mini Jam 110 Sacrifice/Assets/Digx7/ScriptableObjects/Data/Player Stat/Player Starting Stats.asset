@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41016310c5c16a747abba35191b86a3d, type: 3}
+  m_Name: Player Starting Stats
+  m_EditorClassIdentifier: 
+  moveSpeed: 20
+  currentHealth: 100
+  resistance: 0
+  pattern: {fileID: 11400000, guid: d91327cacd2e04045aa6ce57b112e5aa, type: 2}
+  bulletSpeed: 6
+  bulletRate: 1

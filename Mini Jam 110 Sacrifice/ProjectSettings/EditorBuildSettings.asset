@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Digx7/Scenes/TestScene.unity
+    guid: f8dac585706ef07458da000f85e5b855
   m_configObjects: {}

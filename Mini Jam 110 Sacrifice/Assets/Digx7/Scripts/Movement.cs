@@ -20,6 +20,10 @@ public class Movement : MonoBehaviour
       direction = input;
     }
 
+    public void SetSpeed(int input){
+      speed = input;
+    }
+
     public void DircetionIsTowardPos(Vector2 input){
       Vector2 currentPos = transform.position;
       direction = (input - currentPos).normalized;

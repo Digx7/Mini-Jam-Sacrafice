@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewPosition", menuName = "ScriptableObjects/Position", order = 1)]
+[CreateAssetMenu(fileName = "NewPosition", menuName = "ScriptableObjects/Data/Position", order = 1)]
 public class Postition_SO : ScriptableObject
 {
     public Vector2 position;

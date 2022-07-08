@@ -14,6 +14,10 @@ public class Timer : MonoBehaviour
       StartCoroutine("Wait");
     }
 
+    public void SetTimeToWait(int input){
+      timeToWait = input;
+    }
+
     private IEnumerator Wait()
     {
         yield return new WaitForSeconds(timeToWait);
