@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Digx7/Scenes/TestScene.unity
+    path: Assets/Digx7/Scenes/MainMenuScene.unity
+    guid: b1c188fda78b8b14e9d3341833f3a71c
+  - enabled: 1
+    path: Assets/Digx7/Scenes/GameScene.unity
     guid: f8dac585706ef07458da000f85e5b855
   m_configObjects: {}

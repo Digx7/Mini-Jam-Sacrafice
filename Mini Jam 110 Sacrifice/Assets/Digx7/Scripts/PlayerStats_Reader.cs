@@ -13,7 +13,7 @@ public class PlayerStats_Reader : MonoBehaviour
   public IntEvent currentHealthUpdated;
   public IntEvent resistanceUpdated;
 
-  public UnityEvent patternUpdated;
+  public BulletPatternEvent patternUpdated;
   public IntEvent bulletSpeedUpdated;
   public IntEvent bulletRateUpdated;
 
@@ -40,8 +40,8 @@ public class PlayerStats_Reader : MonoBehaviour
     resistanceUpdated.Invoke(input);
   }
 
-  public void OnPatternUpdate(){
-    patternUpdated.Invoke();
+  public void OnPatternUpdate(BulletPattern_SO input){
+    patternUpdated.Invoke(input);
   }
 
   public void OnBulletSpeedUpdate(int input){

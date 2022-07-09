@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Player Starting Stats
   m_EditorClassIdentifier: 
   moveSpeed: 20
-  currentHealth: 100
+  currentHealth: 10
   resistance: 0
   pattern: {fileID: 11400000, guid: d91327cacd2e04045aa6ce57b112e5aa, type: 2}
-  bulletSpeed: 6
+  bulletSpeed: 1
   bulletRate: 1

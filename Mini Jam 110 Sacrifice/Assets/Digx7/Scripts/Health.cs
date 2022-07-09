@@ -20,6 +20,10 @@ public class Health : MonoBehaviour
       resistance = input;
     }
 
+    public void SetMaxHealth(int input){
+      maxHealth = input;
+    }
+
     public void RefillHealth(){
       currentHealth = maxHealth;
 

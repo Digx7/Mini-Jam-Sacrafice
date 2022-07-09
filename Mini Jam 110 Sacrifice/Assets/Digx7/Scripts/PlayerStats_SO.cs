@@ -30,12 +30,22 @@ public class PlayerStats_SO : ScriptableObject
     for(int i = listeners.Count -1; i >= 0; i--)
     listeners[i].OnMoveSpeedUpdate(moveSpeed);
   }
+  public void updateMoveSpeed(int input){
+    moveSpeed += input;
+    for(int i = listeners.Count -1; i >= 0; i--)
+    listeners[i].OnMoveSpeedUpdate(moveSpeed);
+  }
   public int getMoveSpeed(){
     return moveSpeed;
   }
 
   public void setCurrentHealth(int input){
     currentHealth = input;
+    for(int i = listeners.Count -1; i >= 0; i--)
+    listeners[i].OnCurrentHealthUpdate(currentHealth);
+  }
+  public void updateCurrentHealth(int input){
+    currentHealth += input;
     for(int i = listeners.Count -1; i >= 0; i--)
     listeners[i].OnCurrentHealthUpdate(currentHealth);
   }
@@ -46,7 +56,7 @@ public class PlayerStats_SO : ScriptableObject
   public void setPattern(BulletPattern_SO input){
     pattern = input;
     for(int i = listeners.Count -1; i >= 0; i--)
-    listeners[i].OnPatternUpdate();
+    listeners[i].OnPatternUpdate(input);
   }
   public BulletPattern_SO getPattern(){
     return pattern;
@@ -57,12 +67,22 @@ public class PlayerStats_SO : ScriptableObject
     for(int i = listeners.Count -1; i >= 0; i--)
     listeners[i].OnBulletSpeedUpdate(bulletSpeed);
   }
+  public void updateBulletSpeed(int input){
+    bulletSpeed += input;
+    for(int i = listeners.Count -1; i >= 0; i--)
+    listeners[i].OnBulletSpeedUpdate(bulletSpeed);
+  }
   public int getBulletSpeed(){
     return bulletSpeed;
   }
 
   public void setBulletRate(int input){
     bulletRate = input;
+    for(int i = listeners.Count -1; i >= 0; i--)
+    listeners[i].OnBulletRateUpdate(bulletRate);
+  }
+  public void updateBulletRate(int input){
+    bulletRate += input;
     for(int i = listeners.Count -1; i >= 0; i--)
     listeners[i].OnBulletRateUpdate(bulletRate);
   }

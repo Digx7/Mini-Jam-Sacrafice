@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41016310c5c16a747abba35191b86a3d, type: 3}
   m_Name: Player Stats
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  currentHealth: 10
+  moveSpeed: 5
+  currentHealth: 0
   resistance: 0
   pattern: {fileID: 11400000, guid: d91327cacd2e04045aa6ce57b112e5aa, type: 2}
-  bulletSpeed: 4
-  bulletRate: 2
+  bulletSpeed: 1
+  bulletRate: 10

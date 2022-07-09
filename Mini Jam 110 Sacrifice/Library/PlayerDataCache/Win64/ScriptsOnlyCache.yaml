@@ -5,15 +5,26 @@ ScriptsOnlyBuild:
     - BulletPattern_Manager
     - BulletPattern_Node
     - BulletPattern_SO
+    - BulletSetup
     - CollisionDetector
+    - Debuff_Manager
+    - Debuff_SO
     - DestroyObject
+    - EnemyCounter
+    - GameManager
+    - GameState_Listener
+    - GameState_SO
     - Health
+    - HealthSetup
     - Movement
     - PlayerStats_Reader
     - PlayerStats_SO
     - Position_Reader
     - Position_Updater
     - Postition_SO
+    - SceneLoader
+    - Score
+    - Spawner
     - Test_Input
     - Timer
     - UI_Manager
@@ -56,10 +67,14 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
     Assembly-CSharp:
+    - BulletPatternEvent
     - IntEvent
     - Vector2Event
     Unity.TextMeshPro:
@@ -82,323 +97,38 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
     - UnityEngine.Events.UnityEvent
+    - UnityEngine.RectOffset
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
+    fullTypeName: SceneLoader
+    methodName: LoadScene
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
   - assembly: Assembly-CSharp
     fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    methodName: SetSpeed
   - assembly: Assembly-CSharp
     fullTypeName: Movement
     methodName: SetDirection
+  - assembly: Assembly-CSharp
+    fullTypeName: Health
+    methodName: SetResistance
   - assembly: Assembly-CSharp
     fullTypeName: PlayerStats_SO
     methodName: setCurrentHealth
@@ -406,820 +136,178 @@ ScriptsOnlyBuild:
     fullTypeName: DestroyObject
     methodName: DestroyObject_
   - assembly: Assembly-CSharp
+    fullTypeName: GameState_SO
+    methodName: ChangeToLose
+  - assembly: Assembly-CSharp
+    fullTypeName: BulletPattern_Manager
+    methodName: SetPattern
+  - assembly: Assembly-CSharp
+    fullTypeName: Timer
+    methodName: SetTimeToWait
+  - assembly: Assembly-CSharp
     fullTypeName: BulletPattern_Manager
     methodName: Fire
   - assembly: Assembly-CSharp
     fullTypeName: Health
     methodName: Damage
   - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
+    fullTypeName: Spawner
+    methodName: Spawn
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: Spawner
+    methodName: Spawn
   - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
+    fullTypeName: Spawner
+    methodName: Spawn
   - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
+    fullTypeName: Spawner
+    methodName: Spawn
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: Spawner
+    methodName: Spawn
   - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
+    fullTypeName: Spawner
+    methodName: Spawn
   - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
+    fullTypeName: Spawner
+    methodName: Spawn
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: Spawner
+    methodName: Spawn
   - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
+    fullTypeName: Spawner
+    methodName: Spawn
   - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
+    fullTypeName: Spawner
+    methodName: Spawn
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: Spawner
+    methodName: Spawn
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
   - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: GameState_SO
+    methodName: ChangeToWaveState
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
   - assembly: Assembly-CSharp
     fullTypeName: Movement
-    methodName: DircetionIsTowardPos
+    methodName: SetSpeed
   - assembly: Assembly-CSharp
     fullTypeName: Health
     methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
   - assembly: Assembly-CSharp
     fullTypeName: Movement
     methodName: DircetionIsTowardPos
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: EnemyCounter
+    methodName: Die
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
   - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
+    fullTypeName: GameState_SO
+    methodName: ChangeToPickingDebuff
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: Debuff_Manager
+    methodName: triggerDebuff
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: GameState_SO
+    methodName: ChangeToWaveState
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
   - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: Debuff_Manager
+    methodName: triggerDebuff
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: GameState_SO
+    methodName: ChangeToWaveState
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: Debuff_Manager
+    methodName: triggerDebuff
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: GameState_SO
+    methodName: ChangeToWaveState
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
   - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: Debuff_Manager
+    methodName: triggerDebuff
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: GameState_SO
+    methodName: ChangeToWaveState
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: Debuff_Manager
+    methodName: triggerDebuff
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: GameState_SO
+    methodName: ChangeToWaveState
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
   - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: Debuff_Manager
+    methodName: triggerDebuff
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: GameState_SO
+    methodName: ChangeToWaveState
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
+    fullTypeName: Score
+    methodName: increaseScore
   - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
+    fullTypeName: SceneLoader
+    methodName: LoadScene
   - assembly: Assembly-CSharp
     fullTypeName: UI_Manager
     methodName: SetHealthData
+  - assembly: Assembly-CSharp
+    fullTypeName: UI_Manager
+    methodName: UpdateScoreDate
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: SceneLoader
+    methodName: ReloadScene
   sceneClasses:
-    Assets/Digx7/Scenes/TestScene.unity:
+    Assets/Digx7/Scenes/GameScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -1231,8 +319,6 @@ ScriptsOnlyBuild:
     - Class: 28
       Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
@@ -1249,55 +335,77 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1908}
+      Script: {instanceID: 1634}
     - Class: 114
-      Script: {instanceID: 2418}
+      Script: {instanceID: 1934}
     - Class: 114
-      Script: {instanceID: 2616}
+      Script: {instanceID: 2152}
     - Class: 114
-      Script: {instanceID: 3010}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 3288}
+      Script: {instanceID: 3038}
     - Class: 114
-      Script: {instanceID: 3566}
+      Script: {instanceID: 3316}
     - Class: 114
-      Script: {instanceID: 5132}
+      Script: {instanceID: 3594}
     - Class: 114
-      Script: {instanceID: 5272}
+      Script: {instanceID: 3710}
     - Class: 114
-      Script: {instanceID: 5454}
+      Script: {instanceID: 5300}
     - Class: 114
-      Script: {instanceID: 5480}
+      Script: {instanceID: 5482}
     - Class: 114
-      Script: {instanceID: 5496}
+      Script: {instanceID: 5508}
     - Class: 114
-      Script: {instanceID: 6518}
+      Script: {instanceID: 5854}
     - Class: 114
-      Script: {instanceID: 6566}
+      Script: {instanceID: 6548}
     - Class: 114
-      Script: {instanceID: 6588}
+      Script: {instanceID: 6596}
     - Class: 114
-      Script: {instanceID: 6602}
+      Script: {instanceID: 6618}
     - Class: 114
-      Script: {instanceID: 7342}
+      Script: {instanceID: 6632}
     - Class: 114
-      Script: {instanceID: 7566}
+      Script: {instanceID: 7372}
     - Class: 114
-      Script: {instanceID: 8044}
+      Script: {instanceID: 7586}
     - Class: 114
-      Script: {instanceID: 8180}
+      Script: {instanceID: 7598}
     - Class: 114
-      Script: {instanceID: 8868}
+      Script: {instanceID: 8076}
     - Class: 114
-      Script: {instanceID: 9502}
+      Script: {instanceID: 8212}
     - Class: 114
-      Script: {instanceID: 29100}
+      Script: {instanceID: 8652}
     - Class: 114
-      Script: {instanceID: 32986}
+      Script: {instanceID: 8686}
     - Class: 114
-      Script: {instanceID: 33000}
+      Script: {instanceID: 8902}
     - Class: 114
-      Script: {instanceID: 40286}
+      Script: {instanceID: 9536}
+    - Class: 114
+      Script: {instanceID: 9994}
+    - Class: 114
+      Script: {instanceID: 26180}
+    - Class: 114
+      Script: {instanceID: 32034}
+    - Class: 114
+      Script: {instanceID: 46694}
+    - Class: 114
+      Script: {instanceID: 46702}
+    - Class: 114
+      Script: {instanceID: 73630}
+    - Class: 114
+      Script: {instanceID: 83180}
+    - Class: 114
+      Script: {instanceID: 89948}
+    - Class: 114
+      Script: {instanceID: 93770}
+    - Class: 114
+      Script: {instanceID: 100596}
+    - Class: 114
+      Script: {instanceID: 110278}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1307,6 +415,65 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Digx7/Scenes/MainMenuScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1634}
+    - Class: 114
+      Script: {instanceID: 2446}
+    - Class: 114
+      Script: {instanceID: 3038}
+    - Class: 114
+      Script: {instanceID: 3316}
+    - Class: 114
+      Script: {instanceID: 3710}
+    - Class: 114
+      Script: {instanceID: 5160}
+    - Class: 114
+      Script: {instanceID: 5524}
+    - Class: 114
+      Script: {instanceID: 6548}
+    - Class: 114
+      Script: {instanceID: 7372}
+    - Class: 114
+      Script: {instanceID: 7598}
+    - Class: 114
+      Script: {instanceID: 8076}
+    - Class: 114
+      Script: {instanceID: 100596}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -1407,6 +574,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LookAtRotator
+  - hash:
+      serializedVersion: 2
+      Hash: a4fd0ece7c394d7847bd33234b9f88fb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UI_Manager
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1925,6 +1098,12 @@ ScriptsOnlyBuild:
     className: BufferManager
   - hash:
       serializedVersion: 2
+      Hash: ee0f6cd39c734927dc72803514dd7c17
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -2129,6 +1308,12 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
+      Hash: 58a96f7f3f6208e0c6afecdc48e30d49
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AspectRatioManager
+  - hash:
+      serializedVersion: 2
       Hash: 46ffbaea01259c5c7ee677afefd93ea8
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -2259,6 +1444,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 8ce872b8e228753e7da739b23cb83e0b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerStats_Reader
   - hash:
       serializedVersion: 2
       Hash: 41ac98c9880a6f3758ca69dbaa1e7777
@@ -2441,6 +1632,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseOverMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 8afdf016a7648843ab96a119f92f5565
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerStats_SO
+  - hash:
+      serializedVersion: 2
       Hash: f6831ac80ec81c5d5b370c0ed0fee997
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -2513,30 +1710,67 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: e12c9ff8763393bc5f2c90ed198309a9
+      Hash: e3409a47a50f1ecb2f4ddaaf421005ab
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: UI_Manager
+    className: BulletSetup
   - hash:
       serializedVersion: 2
-      Hash: a3ac226f95eddb9b00f5743f08b892c1
+      Hash: 63321d8e2eb3528fb76ed8c8781544d7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PlayerStats_SO
+    className: HealthSetup
   - hash:
       serializedVersion: 2
-      Hash: 8c2deaa9866935f6148e36d20da400cf
+      Hash: 3e5e06a13bc4f16ea1edea7db4dd749b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PlayerStats_Reader
+    className: Debuff_SO
   - hash:
       serializedVersion: 2
-      Hash: 58a96f7f3f6208e0c6afecdc48e30d49
+      Hash: b82f3fe3495bd781eca2c96415f0b56b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: AspectRatioManager
+    className: Debuff_Manager
+  - hash:
+      serializedVersion: 2
+      Hash: f085d4c9b78d96afcdd4d7105b4c5f9b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameState_SO
+  - hash:
+      serializedVersion: 2
+      Hash: 1a01c619d6fd26fa8d34dbca98d19821
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameState_Listener
+  - hash:
+      serializedVersion: 2
+      Hash: 277b6ab4711b243d79cbff6539902c5f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Spawner
+  - hash:
+      serializedVersion: 2
+      Hash: 65f1b40b2f789c4005b5b815ac470342
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyCounter
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneLoader
+  - hash:
+      serializedVersion: 2
+      Hash: 21e3a03d108edc91c2795ebdd63abde1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Score
   platform: 19
   scenePathNames:
-  - Assets/Digx7/Scenes/TestScene.unity
+  - Assets/Digx7/Scenes/MainMenuScene.unity
+  - Assets/Digx7/Scenes/GameScene.unity
   playerPath: C:/Users/Digx7/Desktop/Files/Work/Projects/GameJams/Mini Jam Sacrifice/Builds/Win
-    (Dev 0.13)/Mini Jam 110 Sacrifice.exe
+    (Dev 0.14)/Mini Jam 110 Sacrifice.exe

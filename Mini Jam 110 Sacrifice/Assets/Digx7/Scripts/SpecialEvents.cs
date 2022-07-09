@@ -26,3 +26,8 @@ public class BoolEvent : UnityEvent<bool>
 public class Vector2Event : UnityEvent<Vector2>
 {
 }
+
+[System.Serializable]
+public class BulletPatternEvent : UnityEvent<BulletPattern_SO>
+{
+}
