@@ -12,6 +12,8 @@ public class Health : MonoBehaviour
     public IntEvent healthChanged;
     public UnityEvent hasDied;
 
+    private bool isDead=false;
+
     public void Start(){
       healthChanged.Invoke(currentHealth);
     }
@@ -48,6 +50,10 @@ public class Health : MonoBehaviour
     }
 
     public void checkIfDead(){
-      if(currentHealth <= 0) hasDied.Invoke();
+      if(currentHealth <= 0 && !isDead)
+      {
+        hasDied.Invoke();
+        isDead = true;
+      }
     }
 }

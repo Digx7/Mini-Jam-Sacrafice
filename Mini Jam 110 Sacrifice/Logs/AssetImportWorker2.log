@@ -1,0 +1,335 @@
+Using pre-set license
+Built from '2022.1/staging' branch; Version is '2022.1.7f1 (240f4c1f462c) revision 2363212'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 15789 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.1.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Digx7/Desktop/Files/Work/Git_Repos/Mini-Jam-Sacrafice/Mini Jam 110 Sacrifice
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+63267
+Successfully changed project path to: C:/Users/Digx7/Desktop/Files/Work/Git_Repos/Mini-Jam-Sacrafice/Mini Jam 110 Sacrifice
+C:/Users/Digx7/Desktop/Files/Work/Git_Repos/Mini-Jam-Sacrafice/Mini Jam 110 Sacrifice
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 142.25 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.7f1 (240f4c1f462c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Digx7/Desktop/Files/Work/Git_Repos/Mini-Jam-Sacrafice/Mini Jam 110 Sacrifice/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 with Max-Q Design (ID=0x1f12)
+    Vendor:   NVIDIA
+    VRAM:     5980 MB
+    Driver:   30.0.15.1278
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56340
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.012248 seconds.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 111.39 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.752 seconds
+Domain Reload Profiling:
+	ReloadAssembly (753ms)
+		BeginReloadAssembly (79ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (545ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (132ms)
+				TypeCache.Initialize (131ms)
+					TypeCache.ScanAssembly (130ms)
+				ResolveRequiredComponents (1ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (323ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (7ms)
+				RefreshPlugins (111ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (140ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.010036 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Digx7\Desktop\Files\Work\Git_Repos\Mini-Jam-Sacrafice\Mini Jam 110 Sacrifice\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Digx7\Desktop\Files\Work\Git_Repos\Mini-Jam-Sacrafice\Mini Jam 110 Sacrifice\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 115.99 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.486 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1487ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1228ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (319ms)
+				TypeCache.Initialize (314ms)
+					TypeCache.ScanAssembly (309ms)
+				ResolveRequiredComponents (5ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (657ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (7ms)
+				RefreshPlugins (116ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (345ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.57 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4596 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (57.8 KB). Loaded Objects now: 5057.
+Memory consumption went from 0.70 GB to 0.70 GB.
+Total: 5.718000 ms (FindLiveObjects: 0.642700 ms CreateObjectMapping: 0.379700 ms MarkObjects: 4.576800 ms  DeleteObjects: 0.117300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 259467.589580 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Change Pattern Debuff Variant.prefab
+  artifactKey: Guid(c106199509c8fe044a1e00ca8dd1f46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Change Pattern Debuff Variant.prefab using Guid(c106199509c8fe044a1e00ca8dd1f46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '431c720c673db1a5133de6730ed30739') in 0.439068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Decrease Health Debuff Variant.prefab
+  artifactKey: Guid(cabe9665695b01247acd5c275059c9b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Decrease Health Debuff Variant.prefab using Guid(cabe9665695b01247acd5c275059c9b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc9ee9510a9017740becfc232cf9286') in 0.051522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Increase Fire Rate Debuff Variant.prefab
+  artifactKey: Guid(fd6a4206cd9b9f643b374b285135ac95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Increase Fire Rate Debuff Variant.prefab using Guid(fd6a4206cd9b9f643b374b285135ac95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d22d95209ea877c322646151d81418') in 0.051813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Decrease Speed Debuff Variant.prefab
+  artifactKey: Guid(b2c74ff980d4378438832f89757f2a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Decrease Speed Debuff Variant.prefab using Guid(b2c74ff980d4378438832f89757f2a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81d8c21981c99ede7c41c0121120d39b') in 0.052691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.230802 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Debuff.prefab
+  artifactKey: Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Debuff.prefab using Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b20883ee79e4b168cff40581d193ff38') in 0.111515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Increase Fire Rate Debuff Variant.prefab
+  artifactKey: Guid(fd6a4206cd9b9f643b374b285135ac95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Increase Fire Rate Debuff Variant.prefab using Guid(fd6a4206cd9b9f643b374b285135ac95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d4dc635116e2da838d4bebf59d844bb') in 0.071727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Decrease Speed Debuff Variant.prefab
+  artifactKey: Guid(b2c74ff980d4378438832f89757f2a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Decrease Speed Debuff Variant.prefab using Guid(b2c74ff980d4378438832f89757f2a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd83e4938cddf61dc080ed26060a90a58') in 0.064806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.822371 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Debuff.prefab
+  artifactKey: Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Debuff.prefab using Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e3e2ed9107e489dbea2a33ab1548667') in 0.081765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Increase Fire Rate Debuff Variant.prefab
+  artifactKey: Guid(fd6a4206cd9b9f643b374b285135ac95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Increase Fire Rate Debuff Variant.prefab using Guid(fd6a4206cd9b9f643b374b285135ac95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836fc6540c14505605ff479f682fef17') in 0.061828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.496452 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Debuff.prefab
+  artifactKey: Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Debuff.prefab using Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88f6338f6cb96242dbf665be4f80313a') in 0.101755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Reduce Bullet Speed Debuff Variant.prefab
+  artifactKey: Guid(3aba3efb5fba4a5448a6657b59ac52e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Reduce Bullet Speed Debuff Variant.prefab using Guid(3aba3efb5fba4a5448a6657b59ac52e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c1efec8a46d50e71ac3fa6cfbccc5e') in 0.099522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.572409 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Debuff.prefab
+  artifactKey: Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Debuff.prefab using Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '568c57f3602a6a56f8cf73c5ccaa8286') in 0.135120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Decrease Speed Debuff Variant.prefab
+  artifactKey: Guid(b2c74ff980d4378438832f89757f2a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Decrease Speed Debuff Variant.prefab using Guid(b2c74ff980d4378438832f89757f2a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbdfee2a7af9a6f820102391ec577b36') in 0.079367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.152533 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Debuff.prefab
+  artifactKey: Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Debuff.prefab using Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c1ce38432e066bdde2cae1891955d9') in 0.074515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Increase Fire Rate Debuff Variant.prefab
+  artifactKey: Guid(fd6a4206cd9b9f643b374b285135ac95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Increase Fire Rate Debuff Variant.prefab using Guid(fd6a4206cd9b9f643b374b285135ac95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e098e7c9cc454e61a1aa3a9c172711e') in 0.094097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Increase Damage Taken Debuff Variant.prefab
+  artifactKey: Guid(90be7fe93abbfac46871da3f52614cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Increase Damage Taken Debuff Variant.prefab using Guid(90be7fe93abbfac46871da3f52614cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82b89c397fd2cfe81f9ec7538ddc3d06') in 0.061127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.455980 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Debuff.prefab
+  artifactKey: Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Debuff.prefab using Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '759f28176d6bee74fd9a4a7f01008b33') in 0.128192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Reduce Bullet Speed Debuff Variant.prefab
+  artifactKey: Guid(3aba3efb5fba4a5448a6657b59ac52e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Reduce Bullet Speed Debuff Variant.prefab using Guid(3aba3efb5fba4a5448a6657b59ac52e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e435702813281adb332f8804c32544b') in 0.097808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.627269 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Debuff.prefab
+  artifactKey: Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Debuff.prefab using Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa718481ab5e3b379bf1fff8bbcd6be') in 0.085429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Reduce Bullet Speed Debuff Variant.prefab
+  artifactKey: Guid(3aba3efb5fba4a5448a6657b59ac52e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Reduce Bullet Speed Debuff Variant.prefab using Guid(3aba3efb5fba4a5448a6657b59ac52e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e5b73e9e4bd3cebce4afcf2818f4dc') in 0.094925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.523806 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Debuff.prefab
+  artifactKey: Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Debuff.prefab using Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '928bf091ce7990fb75eb5461a567a0c9') in 0.066767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Reduce Bullet Speed Debuff Variant.prefab
+  artifactKey: Guid(3aba3efb5fba4a5448a6657b59ac52e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Reduce Bullet Speed Debuff Variant.prefab using Guid(3aba3efb5fba4a5448a6657b59ac52e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '779182aeebbc3984a2c0fa32233da907') in 0.054642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.686178 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Debuff.prefab
+  artifactKey: Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Debuff.prefab using Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbf2f1f4e18294d166881e0178dc52a2') in 0.078632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Increase Fire Rate Debuff Variant.prefab
+  artifactKey: Guid(fd6a4206cd9b9f643b374b285135ac95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Increase Fire Rate Debuff Variant.prefab using Guid(fd6a4206cd9b9f643b374b285135ac95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60b5fc2a7627e4bb0d5851bbc87b2e8b') in 0.102002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.231106 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Debuff.prefab
+  artifactKey: Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Debuff.prefab using Guid(ce8cde10aa092ab48bdf2bd03df33afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c52f1fa480c146cbcd79c1ecfb9923aa') in 0.105533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Digx7/Prefab/Debuff/Reduce Bullet Speed Debuff Variant.prefab
+  artifactKey: Guid(3aba3efb5fba4a5448a6657b59ac52e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Digx7/Prefab/Debuff/Reduce Bullet Speed Debuff Variant.prefab using Guid(3aba3efb5fba4a5448a6657b59ac52e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63129330a072dee2e666c9a1f57aab54') in 0.068847 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

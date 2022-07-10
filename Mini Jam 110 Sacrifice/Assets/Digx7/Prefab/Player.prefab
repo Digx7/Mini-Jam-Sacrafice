@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7328232529295355899}
   - component: {fileID: 6741700295890056712}
   - component: {fileID: 8524713367007652592}
+  - component: {fileID: 9079082415930613607}
   m_Layer: 0
   m_Name: Health
   m_TagString: Untagged
@@ -79,9 +80,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 2d04748d729f0984c973b3455244fcd9, type: 2}
-        m_TargetAssemblyTypeName: GameState_SO, Assembly-CSharp
-        m_MethodName: ChangeToLose
+      - m_Target: {fileID: 9079082415930613607}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: Spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -148,6 +149,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 69ccfb7747f796547a2f2a109d6d9549, type: 2}
   health: {fileID: 7328232529295355899}
+--- !u!114 &9079082415930613607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345955252322130540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dfde758c11446445b58f4f41268a05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 6573189775887007399, guid: 2d5353a787a272a419e4315727079cac, type: 3}
+  spawnLocation: {x: 0, y: 0}
+  setSpawnLocationToSameAsThis: 1
 --- !u!1 &4442900015793117234
 GameObject:
   m_ObjectHideFlags: 0

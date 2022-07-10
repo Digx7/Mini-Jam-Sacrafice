@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 2184542369917048252, guid: f43b8151928a91f4aa19e4c51dd12dbe, type: 3}
+  - {fileID: 8482315277935881035, guid: 15d037ecb3d701c46a74ddd9c011f3f5, type: 3}
   spawnLocation: {x: 0, y: 0}
   setSpawnLocationToSameAsThis: 1
 --- !u!114 &4803783828652129631
@@ -77,6 +77,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 476dcad2954c6444f8955eb2cd21614f, type: 2}
+        m_TargetAssemblyTypeName: Int_SO, Assembly-CSharp
+        m_MethodName: UpdateData
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -113,18 +125,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 476dcad2954c6444f8955eb2cd21614f, type: 2}
-        m_TargetAssemblyTypeName: Int_SO, Assembly-CSharp
-        m_MethodName: UpdateData
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

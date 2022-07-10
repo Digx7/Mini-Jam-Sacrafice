@@ -9660,7 +9660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b4176fc38913ea4183e2c3be039d343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToWait: 1
+  timeToWait: 1.5
   loop: 0
   startOnAwake: 1
   timerFinish:
