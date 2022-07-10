@@ -5,18 +5,9 @@ using UnityEngine.Events;
 
 public class EnemyCounter : MonoBehaviour
 {
-  public static int count;
-  public UnityEvent allEnemiesDead;
+  public UnityEvent AllAreDead;
 
-  public void Awake()
-  {
-      count++;
-  }
+  public void die(){
 
-  public void Die()
-  {
-      count--;
-
-      if(count == 0) allEnemiesDead.Invoke();
   }
 }

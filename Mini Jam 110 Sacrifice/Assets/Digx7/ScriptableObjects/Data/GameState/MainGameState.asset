@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8335b05c053b0734291a75a5baa145c0, type: 3}
   m_Name: MainGameState
   m_EditorClassIdentifier: 
-  currentState: 1
+  currentState: 0

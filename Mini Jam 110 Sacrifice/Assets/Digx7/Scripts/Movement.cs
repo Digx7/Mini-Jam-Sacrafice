@@ -29,6 +29,11 @@ public class Movement : MonoBehaviour
       direction = (input - currentPos).normalized;
     }
 
+    public void DircetionIsAwayPos(Vector2 input){
+      Vector2 currentPos = transform.position;
+      direction = (currentPos - input).normalized;
+    }
+
     private void Move_AddForce(Vector2 input){
       rb.AddRelativeForce(input * speed);
     }

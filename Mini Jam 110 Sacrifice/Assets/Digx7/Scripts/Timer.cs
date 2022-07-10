@@ -7,10 +7,15 @@ public class Timer : MonoBehaviour
 {
     public float timeToWait;
     public bool loop;
+    public bool startOnAwake = true;
 
     public UnityEvent timerFinish;
 
     public void Start(){
+      if(startOnAwake)StartTimer();
+    }
+
+    public void StartTimer(){
       StartCoroutine("Wait");
     }
 

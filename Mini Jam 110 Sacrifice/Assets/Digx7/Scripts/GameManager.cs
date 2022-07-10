@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
 
     public GameState_SO currentState;
 
+    public Int_SO numberOfEnemies;
+
     public void Awake(){
       SetUp();
     }
@@ -18,6 +20,7 @@ public class GameManager : MonoBehaviour
     public void SetUp(){
       runningStats.setAllStats(startingStats);
       ChangeToStart();
+      numberOfEnemies.SetData(0);
     }
 
     public void SetGameState(GameState input){
