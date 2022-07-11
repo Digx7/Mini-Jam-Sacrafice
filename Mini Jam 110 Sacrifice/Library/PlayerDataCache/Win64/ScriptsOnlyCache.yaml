@@ -11,6 +11,7 @@ ScriptsOnlyBuild:
     - Debuff_SO
     - DestroyObject
     - GameManager
+    - GameManager_Zag
     - GameState_Listener
     - GameState_SO
     - Health
@@ -18,6 +19,7 @@ ScriptsOnlyBuild:
     - Int_Listener
     - Int_SO
     - LookAtRotation
+    - MainMenu
     - Movement
     - PlayerStats_Reader
     - PlayerStats_SO
@@ -26,6 +28,8 @@ ScriptsOnlyBuild:
     - Postition_SO
     - SceneLoader
     - Score
+    - ScoreBoardUI_Manager
+    - ScoreBoard_SO
     - Spawner
     - Test_Input
     - Timer
@@ -117,8 +121,38 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: BackFunction
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: CreditsFunction
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: BackFunction
+  - assembly: Assembly-CSharp
     fullTypeName: SceneLoader
     methodName: LoadScene
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: CreditsFunction
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: BackFunction
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: CreditsFunction
+  - assembly: Assembly-CSharp
+    fullTypeName: ScoreBoardUI_Manager
+    methodName: updateScore
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: BackFunction
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: CreditsFunction
   - assembly: Assembly-CSharp
     fullTypeName: Spawner
     methodName: Spawn
@@ -126,11 +160,35 @@ ScriptsOnlyBuild:
     fullTypeName: Timer
     methodName: StartTimer
   - assembly: Assembly-CSharp
-    fullTypeName: Int_SO
-    methodName: UpdateData
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Timer
+    methodName: StartTimer
   - assembly: Assembly-CSharp
     fullTypeName: Spawner
     methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Timer
+    methodName: StartTimer
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Timer
+    methodName: StartTimer
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Timer
+    methodName: StartTimer
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Timer
+    methodName: StartTimer
   - assembly: Assembly-CSharp
     fullTypeName: Movement
     methodName: SetSpeed
@@ -158,18 +216,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: BulletPattern_Manager
     methodName: Fire
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: Assembly-CSharp
     fullTypeName: Health
     methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: Spawner
-    methodName: Spawn
-  - assembly: Assembly-CSharp
-    fullTypeName: Timer
-    methodName: StartTimer
-  - assembly: Assembly-CSharp
-    fullTypeName: Int_SO
-    methodName: UpdateData
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
@@ -180,6 +232,18 @@ ScriptsOnlyBuild:
     fullTypeName: GameState_SO
     methodName: ChangeToWaveState
   - assembly: Assembly-CSharp
+    fullTypeName: SceneLoader
+    methodName: LoadScene
+  - assembly: Assembly-CSharp
+    fullTypeName: SceneLoader
+    methodName: ReloadScene
+  - assembly: Assembly-CSharp
+    fullTypeName: GameManager_Zag
+    methodName: Play
+  - assembly: Assembly-CSharp
+    fullTypeName: GameManager_Zag
+    methodName: Pause
+  - assembly: Assembly-CSharp
     fullTypeName: Spawner
     methodName: Spawn
   - assembly: Assembly-CSharp
@@ -189,8 +253,11 @@ ScriptsOnlyBuild:
     fullTypeName: Timer
     methodName: StartTimer
   - assembly: Assembly-CSharp
-    fullTypeName: Int_SO
-    methodName: UpdateData
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Timer
+    methodName: StartTimer
   - assembly: Assembly-CSharp
     fullTypeName: Spawner
     methodName: Spawn
@@ -198,8 +265,53 @@ ScriptsOnlyBuild:
     fullTypeName: Timer
     methodName: StartTimer
   - assembly: Assembly-CSharp
-    fullTypeName: Int_SO
-    methodName: UpdateData
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Timer
+    methodName: StartTimer
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Timer
+    methodName: StartTimer
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Timer
+    methodName: StartTimer
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Timer
+    methodName: StartTimer
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Timer
+    methodName: StartTimer
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Timer
+    methodName: StartTimer
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: Movement
+    methodName: SetSpeed
   - assembly: Assembly-CSharp
     fullTypeName: Spawner
     methodName: Spawn
@@ -207,8 +319,104 @@ ScriptsOnlyBuild:
     fullTypeName: DestroyObject
     methodName: DestroyObject_
   - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: SetSpeed
+    fullTypeName: Health
+    methodName: Damage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Int_SO
+    methodName: UpdateData
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: Debuff_Manager
+    methodName: triggerDebuff
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: GameState_SO
+    methodName: ChangeToWaveState
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: Debuff_Manager
+    methodName: triggerDebuff
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: GameState_SO
+    methodName: ChangeToWaveState
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: Debuff_Manager
+    methodName: triggerDebuff
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: GameState_SO
+    methodName: ChangeToWaveState
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: Debuff_Manager
+    methodName: triggerDebuff
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: GameState_SO
+    methodName: ChangeToWaveState
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: Debuff_Manager
+    methodName: triggerDebuff
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: GameState_SO
+    methodName: ChangeToWaveState
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: Debuff_Manager
+    methodName: triggerDebuff
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: GameState_SO
+    methodName: ChangeToWaveState
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
   - assembly: Assembly-CSharp
     fullTypeName: Health
     methodName: Damage
@@ -237,101 +445,8 @@ ScriptsOnlyBuild:
     fullTypeName: DestroyObject
     methodName: DestroyObject_
   - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: Movement
-    methodName: DircetionIsTowardPos
-  - assembly: Assembly-CSharp
     fullTypeName: Spawner
     methodName: Spawn
-  - assembly: Assembly-CSharp
-    fullTypeName: Int_SO
-    methodName: UpdateData
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Debuff_Manager
-    methodName: triggerDebuff
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: GameState_SO
-    methodName: ChangeToWaveState
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Debuff_Manager
-    methodName: triggerDebuff
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: GameState_SO
-    methodName: ChangeToWaveState
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Debuff_Manager
-    methodName: triggerDebuff
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: GameState_SO
-    methodName: ChangeToWaveState
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Debuff_Manager
-    methodName: triggerDebuff
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: GameState_SO
-    methodName: ChangeToWaveState
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Debuff_Manager
-    methodName: triggerDebuff
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: GameState_SO
-    methodName: ChangeToWaveState
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Debuff_Manager
-    methodName: triggerDebuff
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: GameState_SO
-    methodName: ChangeToWaveState
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Health
-    methodName: Damage
-  - assembly: Assembly-CSharp
-    fullTypeName: Spawner
-    methodName: Spawn
-  - assembly: Assembly-CSharp
-    fullTypeName: Int_SO
-    methodName: UpdateData
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
@@ -357,47 +472,38 @@ ScriptsOnlyBuild:
     fullTypeName: Movement
     methodName: SetSpeed
   - assembly: Assembly-CSharp
-    fullTypeName: Spawner
-    methodName: Spawn
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Spawner
-    methodName: Spawn
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Spawner
-    methodName: Spawn
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Spawner
-    methodName: Spawn
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: Spawner
-    methodName: Spawn
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
-    fullTypeName: DestroyObject
-    methodName: DestroyObject_
-  - assembly: Assembly-CSharp
     fullTypeName: GameState_SO
     methodName: ChangeToLose
   - assembly: Assembly-CSharp
     fullTypeName: DestroyObject
     methodName: DestroyObject_
   - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
+    fullTypeName: Health
+    methodName: Damage
+  - assembly: Assembly-CSharp
+    fullTypeName: Movement
+    methodName: DircetionIsTowardPos
+  - assembly: Assembly-CSharp
+    fullTypeName: Spawner
+    methodName: Spawn
+  - assembly: Assembly-CSharp
+    fullTypeName: Int_SO
+    methodName: UpdateData
+  - assembly: Assembly-CSharp
+    fullTypeName: DestroyObject
+    methodName: DestroyObject_
+  - assembly: Assembly-CSharp
     fullTypeName: Score
     methodName: increaseScore
+  - assembly: Assembly-CSharp
+    fullTypeName: Score
+    methodName: saveScore
   - assembly: Assembly-CSharp
     fullTypeName: SceneLoader
     methodName: LoadScene
@@ -422,6 +528,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: SceneLoader
     methodName: ReloadScene
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   sceneClasses:
     Assets/Digx7/Scenes/GameScene.unity:
     - Class: 1
@@ -448,6 +560,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 96
       Script: {instanceID: 0}
     - Class: 104
@@ -457,81 +575,85 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1580}
     - Class: 114
-      Script: {instanceID: 1638}
+      Script: {instanceID: 1636}
     - Class: 114
-      Script: {instanceID: 1648}
+      Script: {instanceID: 1646}
     - Class: 114
-      Script: {instanceID: 1778}
+      Script: {instanceID: 1776}
     - Class: 114
-      Script: {instanceID: 1942}
+      Script: {instanceID: 1940}
     - Class: 114
-      Script: {instanceID: 2160}
+      Script: {instanceID: 2158}
     - Class: 114
-      Script: {instanceID: 2244}
+      Script: {instanceID: 2242}
     - Class: 114
-      Script: {instanceID: 2584}
+      Script: {instanceID: 2582}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2654}
     - Class: 114
-      Script: {instanceID: 2980}
+      Script: {instanceID: 2978}
     - Class: 114
-      Script: {instanceID: 3052}
+      Script: {instanceID: 3050}
     - Class: 114
-      Script: {instanceID: 3394}
+      Script: {instanceID: 3392}
     - Class: 114
-      Script: {instanceID: 3608}
+      Script: {instanceID: 3606}
     - Class: 114
-      Script: {instanceID: 3724}
+      Script: {instanceID: 3722}
     - Class: 114
-      Script: {instanceID: 3956}
+      Script: {instanceID: 3954}
     - Class: 114
-      Script: {instanceID: 4118}
+      Script: {instanceID: 4116}
     - Class: 114
-      Script: {instanceID: 4824}
+      Script: {instanceID: 4822}
     - Class: 114
-      Script: {instanceID: 5158}
+      Script: {instanceID: 5156}
     - Class: 114
-      Script: {instanceID: 5320}
+      Script: {instanceID: 5318}
     - Class: 114
-      Script: {instanceID: 5502}
+      Script: {instanceID: 5500}
     - Class: 114
-      Script: {instanceID: 5528}
+      Script: {instanceID: 5526}
     - Class: 114
-      Script: {instanceID: 5610}
+      Script: {instanceID: 5608}
     - Class: 114
-      Script: {instanceID: 5876}
+      Script: {instanceID: 5874}
     - Class: 114
-      Script: {instanceID: 6062}
+      Script: {instanceID: 6060}
     - Class: 114
-      Script: {instanceID: 6574}
+      Script: {instanceID: 6572}
     - Class: 114
-      Script: {instanceID: 6622}
+      Script: {instanceID: 6620}
     - Class: 114
-      Script: {instanceID: 6644}
+      Script: {instanceID: 6642}
     - Class: 114
-      Script: {instanceID: 6658}
+      Script: {instanceID: 6656}
     - Class: 114
-      Script: {instanceID: 6842}
+      Script: {instanceID: 6840}
     - Class: 114
-      Script: {instanceID: 7374}
+      Script: {instanceID: 7372}
     - Class: 114
-      Script: {instanceID: 7400}
+      Script: {instanceID: 7398}
     - Class: 114
-      Script: {instanceID: 7614}
+      Script: {instanceID: 7612}
     - Class: 114
-      Script: {instanceID: 7626}
+      Script: {instanceID: 7624}
     - Class: 114
-      Script: {instanceID: 8104}
+      Script: {instanceID: 8102}
     - Class: 114
-      Script: {instanceID: 8240}
+      Script: {instanceID: 8238}
     - Class: 114
-      Script: {instanceID: 8680}
+      Script: {instanceID: 8678}
     - Class: 114
-      Script: {instanceID: 8930}
+      Script: {instanceID: 8928}
     - Class: 114
-      Script: {instanceID: 9564}
+      Script: {instanceID: 9562}
     - Class: 114
-      Script: {instanceID: 10022}
+      Script: {instanceID: 10020}
+    - Class: 114
+      Script: {instanceID: 27268}
+    - Class: 114
+      Script: {instanceID: 46566}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -554,7 +676,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Digx7/Scenes/MainMenuScene.unity:
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
+    Assets/Zig Zag/Home.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -571,32 +699,46 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1580}
     - Class: 114
-      Script: {instanceID: 1638}
+      Script: {instanceID: 1636}
     - Class: 114
-      Script: {instanceID: 1648}
+      Script: {instanceID: 1646}
     - Class: 114
-      Script: {instanceID: 2456}
+      Script: {instanceID: 2454}
     - Class: 114
-      Script: {instanceID: 3052}
+      Script: {instanceID: 3050}
     - Class: 114
-      Script: {instanceID: 3724}
+      Script: {instanceID: 3722}
     - Class: 114
-      Script: {instanceID: 5180}
+      Script: {instanceID: 5178}
     - Class: 114
-      Script: {instanceID: 5544}
+      Script: {instanceID: 5542}
     - Class: 114
-      Script: {instanceID: 6574}
+      Script: {instanceID: 6572}
     - Class: 114
-      Script: {instanceID: 7400}
+      Script: {instanceID: 7398}
     - Class: 114
-      Script: {instanceID: 7626}
+      Script: {instanceID: 7624}
     - Class: 114
-      Script: {instanceID: 8104}
+      Script: {instanceID: 8102}
+    - Class: 114
+      Script: {instanceID: 27268}
+    - Class: 114
+      Script: {instanceID: 46564}
+    - Class: 114
+      Script: {instanceID: 64336}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -612,6 +754,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1252,7 +1400,7 @@ ScriptsOnlyBuild:
     className: AnimatedTile
   - hash:
       serializedVersion: 2
-      Hash: 21e3a03d108edc91c2795ebdd63abde1
+      Hash: 936f32aa0151d2d0b7f30fee761e9ed1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Score
@@ -1282,7 +1430,7 @@ ScriptsOnlyBuild:
     className: BufferManager
   - hash:
       serializedVersion: 2
-      Hash: 3ff43f740d16f921112e257c39bcc8ee
+      Hash: 5417ad738036632b89257ddaf7ad3216
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -1910,9 +2058,33 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: af7b7ca330df34a1fc43723b036232ef
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreBoard_SO
+  - hash:
+      serializedVersion: 2
+      Hash: e1f62235c0174be99acc13d698c99088
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 5987d9c0719e4c59cdc4cccf66ae58de
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager_Zag
+  - hash:
+      serializedVersion: 2
+      Hash: c3e2ad98664c7d9180fce62c49d0a03a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreBoardUI_Manager
   platform: 19
   scenePathNames:
-  - Assets/Digx7/Scenes/MainMenuScene.unity
+  - Assets/Zig Zag/Home.unity
   - Assets/Digx7/Scenes/GameScene.unity
-  playerPath: C:/Users/Digx7/Desktop/Files/Work/Projects/GameJams/Mini Jam Sacrifice/Builds/Win
-    (Dev 0.15)/Mini Jam 110 Sacrifice.exe
+  playerPath: C:/Users/Digx7/Desktop/Files/Work/Projects/GameJams/Mini Jam Sacrifice/Builds/Power
+    Down (1.02) Win/Power Down.exe

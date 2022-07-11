@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameState_SO currentState;
 
     public Int_SO numberOfEnemies;
+    public Int_SO currentScore;
 
     public void Awake(){
       SetUp();
@@ -21,6 +22,8 @@ public class GameManager : MonoBehaviour
       runningStats.setAllStats(startingStats);
       ChangeToStart();
       numberOfEnemies.SetData(0);
+      Time.timeScale = 1f;
+      currentScore.SetData(0);
     }
 
     public void SetGameState(GameState input){
